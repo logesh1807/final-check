@@ -1,1 +1,78 @@
-/* Add styles for application here */
+.cont{
+			margin-left: 200px;
+			font-size: 15pt;
+			width: 1000px;
+			padding: 30px;
+}
+#title{
+			font-size: 25pt;
+			margin-left: 10px;
+			margin-top: 10px;
+			color: #ffffff;
+} 
+#movies{
+			color: #ffffff;
+}
+#favorites{
+			color: #ffffff;
+}	
+nav{
+			float: right;
+			margin-right: 50px;
+			margin-top: 30px;
+}
+div{
+			height: 350px;
+}
+table{
+			margin-left: 90px;
+}
+.al-left{
+			text-align: left; 
+}
+.al-right{
+			text-align: right;
+}
+.al-mid{
+			text-align: center;
+}
+.color{
+			background-color: #313f87;
+			color: #faf9f7;
+			height: 30px;
+			width: 70px;
+}	
+#cpw{
+			margin-left: 10px;
+}			
+#logo{
+			width: 50px;
+			height: 50px;
+			margin-left: 30px;
+			margin-top: 10px;
+		
+}
+h1{
+			margin-left: 100px;
+}	
+h2{
+			margin-left: 225px;
+}
+h3{
+			color: #6df792;
+			margin-left: 150px;
+}	
+h4{
+			color: #deded9;
+			margin-left: 100px;
+}
+header{
+			height: 80px;
+			background-color: #3381ff;
+			color: #ffffff;
+}
+footer{
+			height: 50px;
+			background-color: #c3c6c9;
+	
+}
