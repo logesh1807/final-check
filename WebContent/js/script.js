@@ -22,7 +22,7 @@ function validation(){
 								alert("Date of Launch is required.");
 								return false;
 					}
-					var d= document.forms["form"]["catrgory"].value;
+					var d= document.forms ["form"]["catrgory"].value;
 					if(d==""){
 								alert("Genre is required.");
 								return false;
