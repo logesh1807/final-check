@@ -7,8 +7,6 @@ import com.cognizant.moviecruiser.util.DateUtil;
 
 import java.text.ParseException;
 
-
-
 public class MovieDaoCollectionImplTest {
 
 	public static void main(String[] args) {
@@ -32,7 +30,7 @@ public class MovieDaoCollectionImplTest {
 		MovieDao movieDao = new MovieDaoCollectionImpl();
 		List<Movie> movieList = movieDao.getMovieListAdmin();
 		for (Movie x : movieList) {
-			
+
 			System.out.println(x);
 		}
 	}
@@ -41,7 +39,7 @@ public class MovieDaoCollectionImplTest {
 		MovieDao movieDao = new MovieDaoCollectionImpl();
 		List<Movie> movieList = movieDao.getMovieListCustomer();
 		for (Movie x : movieList) {
-			
+
 			System.out.println(x);
 		}
 	}
@@ -52,6 +50,5 @@ public class MovieDaoCollectionImplTest {
 		MovieDao movieDao = new MovieDaoCollectionImpl();
 		movieDao.modifyMovie(m);
 	}
-
 
 }

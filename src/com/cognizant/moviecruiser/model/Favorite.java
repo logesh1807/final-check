@@ -26,6 +26,4 @@ public class Favorite {
 		this.movieList = movieList;
 	}
 
-	
-
 }
