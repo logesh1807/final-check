@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Edit Menu Item</title>
+<title>Edit Movies</title>
 <link href="./style/style.css" rel="stylesheet" type="text/css" />
 <script src="./js/script.js" type="text/javascript"></script>
 </head>
@@ -14,7 +14,7 @@
 		class="img" src="./images/logo.png" alt="logo" id="logo" /> <nav>
 	<a id="menu" href="ShowMovieListAdmin" />Movies</a> </nav> </header>
 	<div>
-		<h1>Edit Menu Item</h1>
+		<h1>Edit Movies</h1>
 		<form class="cont" name="form" onsubmit="return validation()"
 			method="post" action="EditMovieItem?movieId=${menu.id}">
 			<table>

@@ -16,7 +16,7 @@
 		</nav>
 	</header>
 	<div>
-		<h1>Menu Items</h1>
+		<h1>Movies</h1>
 		<table cellspacing="10px" cellpadding="5px">
 			<tr>
 				<th class="al-left">Title</th>
