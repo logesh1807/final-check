@@ -42,16 +42,22 @@
 						value="<fmt:formatDate pattern="dd/MM/yyyy"
 							value="${menu.dateofLaunch }"></fmt:formatDate>"></td>
 					<td><select name="genre" id="genre">
-							<option>Science Fiction</option>
-							<option>Superhero</option>
-							<option>Romance</option>
-							<option>Comedy</option>
-							<option>Adventure</option>
-							<option>Thriller</option></td>
+							<option
+								<c:if test="${movie.genre eq 'ScienceFiction'}">selected</c:if>>Science
+								Fiction</option>
+							<option
+								<c:if test="${movie.genre eq 'Superhero'}">selected</c:if>>Superhero</option>
+
+							<option <c:if test="${movie.genre eq 'Romance'}">selected</c:if>>Romance</option>
+							<option <c:if test="${movie.genre eq 'Comedy'}">selected</c:if>>Comedy</option>
+							<option
+								<c:if test="${movie.genre eq 'Adventure'}">selected</c:if>>Adventure</option>
+							<option <c:if test="${movie.genre eq 'Thriller'}">selected</c:if>>Thriller</option>
+					</select>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="checkbox" id="hasTeaser"
-						name="hasTeaser" checked> <c:if test="${menu.hasTeaser }">Yes</c:if>
+						name="hasTeaser" checked> <c:if test="${menu.hasTeaser }">Has Teaser</c:if>
 						<c:if test="${!menu.hasTeaser }">No</c:if></td>
 				</tr>
 				<tr>

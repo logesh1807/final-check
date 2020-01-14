@@ -51,10 +51,13 @@ public class EditMovieItemServlet extends HttpServlet {
 			long id = Long.parseLong(request.getParameter("movieId"));
 			String title = request.getParameter("texttitle");
 			long boxOffice = Long.parseLong(request.getParameter("textboxOffice"));
-			boolean active = Boolean.parseBoolean(request.getParameter("active"));
+			boolean active = request.getParameter("active").equals("Yes");
 			Date dateofLaunch = DateUtil.convertToDate(request.getParameter("textdateofLaunch"));
 			String genre = request.getParameter("genre");
-			boolean hasTeaser = Boolean.parseBoolean(request.getParameter("hasTeaser"));
+			boolean hasTeaser = request.getParameter("teaser") != null ; 
+			  
+				 
+
 
 			Movie movie = new Movie(id, title, boxOffice, active, dateofLaunch, genre, hasTeaser);
 
