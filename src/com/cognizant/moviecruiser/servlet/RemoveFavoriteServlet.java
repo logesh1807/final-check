@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cognizant.moviecruiser.dao.FavoriteDao;
 import com.cognizant.moviecruiser.dao.FavoriteDaoCollectionImpl;
+import com.cognizant.moviecruiser.dao.FavoriteDaoSqlImpl;
 
 /**
  * Servlet implementation class RemoveFavoriteServlet
@@ -37,7 +38,7 @@ public class RemoveFavoriteServlet extends HttpServlet {
 		try {
 
 			long movieId = Long.parseLong(request.getParameter("movieId"));
-			FavoriteDao favoriteDao = new FavoriteDaoCollectionImpl();
+			FavoriteDao favoriteDao =  new FavoriteDaoSqlImpl();
 			favoriteDao.removeFavorite(1, movieId);
 			request.setAttribute("msg", "Item removed from favorite successfully");
 			RequestDispatcher rd = request.getRequestDispatcher("ShowFavorite");

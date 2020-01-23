@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cognizant.moviecruiser.dao.MovieDao;
 import com.cognizant.moviecruiser.dao.MovieDaoCollectionImpl;
+import com.cognizant.moviecruiser.dao.MovieDaoSqlImpl;
 import com.cognizant.moviecruiser.model.Movie;
 import com.cognizant.moviecruiser.util.DateUtil;
 
@@ -61,7 +62,7 @@ public class EditMovieItemServlet extends HttpServlet {
 
 			Movie movie = new Movie(id, title, boxOffice, active, dateofLaunch, genre, hasTeaser);
 
-			MovieDao movieDao = new MovieDaoCollectionImpl();
+			MovieDao movieDao = new MovieDaoSqlImpl();
 
 			movieDao.modifyMovie(movie);
 			request.setAttribute("msg", "Movie edited successfully ");

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cognizant.moviecruiser.dao.MovieDao;
 import com.cognizant.moviecruiser.dao.MovieDaoCollectionImpl;
+import com.cognizant.moviecruiser.dao.MovieDaoSqlImpl;
 import com.cognizant.moviecruiser.model.Movie;
 
 /**
@@ -37,7 +38,7 @@ public class ShowMovieListCustomerServlet extends HttpServlet {
 			throws ServletException, IOException {
 		try {
 
-			MovieDao movieDao = new MovieDaoCollectionImpl();
+			MovieDao movieDao = new MovieDaoSqlImpl();
 
 			List<Movie> movieList = movieDao.getMovieListCustomer();
 			request.setAttribute("movie", movieList);
